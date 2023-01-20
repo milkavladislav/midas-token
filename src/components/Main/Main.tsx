@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { ILink } from "../../utils/interfaces";
 import Image1 from "../../assets/main-cards/1.png";
 import Image2 from "../../assets/main-cards/2.png";
