@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;500;600;700&display=swap");
 
 body {
   font-family: "Inter", sans-serif;
@@ -21,8 +21,8 @@ body {
   --color-black: hsla(0, 0%, 0%, 1);
   --color-bg-secondary: hsla(220, 14%, 11%, 1);
   --color-bg-primary: hsla(220, 18%, 5%, 1);
-  --color-bg-grey: hsla(0, 0%, 100%, 0.08 );
-
+  --color-bg-grey: hsla(0, 0%, 100%, 0.08);
+  --color-pink: hsla(324, 100%, 70%, 1);
   --color-blue: hsla(227, 100%, 67%, 0.2);
   --linear-gradient-blue: linear-gradient(
     267.57deg,
@@ -47,11 +47,11 @@ section > h2 {
   letter-spacing: -0.07em;
 }
 
-
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
 @media screen and (max-width: 1024px) {
   section > h2 {
     font-size: 5rem;
+    line-height: 5rem;
   }
 }
 

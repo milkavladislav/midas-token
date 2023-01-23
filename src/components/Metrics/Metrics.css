@@ -18,7 +18,7 @@
   content: "";
   display: block;
   position: absolute;
-  top: 60vh;
+  top: 50vh;
   margin-left: calc(35vw - 5rem);
   width: 30vw;
   height: 50vh;
@@ -173,7 +173,6 @@
   .metrics__content {
     background-position: center 25rem;
     background-size: 80vw;
-    background-image: url("../../assets/radial-background.png");
   }
 
   .metrics__buttons {

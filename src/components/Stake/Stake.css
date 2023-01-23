@@ -1,0 +1,185 @@
+.stake > h2 {
+  width: 50vw;
+}
+
+.stake {
+  position: relative;
+}
+
+.stake > h2 > span {
+  font-size: 7rem;
+  display: block;
+  width: 10ch;
+  padding: 0.5rem 3rem;
+  background: linear-gradient(267.57deg, #fb4a4a 0%, #9b4cff 100%);
+  border-radius: 4rem;
+  transform: rotate(-2deg);
+}
+
+.stake > h3 {
+  margin-top: 3rem;
+  font-weight: 500;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  letter-spacing: -0.04em;
+}
+
+.stake > h3 > span {
+  opacity: 0.36;
+}
+
+.stake__information {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stake__information > h3 {
+  text-align: center;
+  margin: 0;
+  font-weight: 100;
+  margin-bottom: 0;
+  font-size: 7rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  opacity: 0.08;
+  transform: rotate(-90deg);
+}
+
+.stake__information-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.stake__information-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.stake__information-card > *:first-child {
+  font-size: 6rem;
+  color: var(--color-pink);
+  padding: 1rem;
+  background: rgba(255, 104, 195, 0.16);
+  border-radius: 50%;
+}
+
+.information__card-text > h4 {
+  font-size: 4.5rem;
+  line-height: 5rem;
+  letter-spacing: -0.06em;
+}
+
+.information__card-text > p {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: -0.02em;
+  opacity: 0.36;
+}
+
+.stake__information::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 25vh;
+  left: 25vw;
+  width: 50vh;
+  height: 50vh;
+  background: radial-gradient(
+    100% 100% at 50% 50%,
+    rgba(255, 108, 223, 0.24) 0%,
+    rgba(255, 108, 188, 0) 100%
+  );
+  filter: blur(100px);
+}
+
+.stake__information:hover::before {
+  background: radial-gradient(
+    100% 100% at 50% 50%,
+    rgba(255, 108, 223, 0.24) 500%,
+    rgba(255, 108, 188, 0) 100%
+  );
+  filter: blur(200px);
+}
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+  .stake > h2 > span {
+    font-size: 4rem;
+    width: 11ch;
+  }
+
+  .stake > h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .information__card-text > h4 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .information__card-text > p {
+    font-size: 1.5rem;
+  }
+
+  .stake__information-card > *:first-child {
+    font-size: 5rem;
+    padding: 0.5rem;
+  }
+
+  .stake__information-cards {
+    gap: 3rem;
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
+  .stake > h2 {
+    width: 100%;
+  }
+
+  .stake > h2 > span {
+    font-size: 2.5rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .stake > h3 {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+
+  .stake__information > h3 {
+    font-size: 5rem;
+    transform: rotate(0);
+  }
+
+  .stake__information {
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stake__information::before {
+    left: 0;
+  }
+
+  .stake__information-card > *:first-child {
+    font-size: 4rem;
+    padding: 0.5rem;
+  }
+
+  .information__card-text > h4 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .information__card-text > p {
+    font-size: 1.3rem;
+  }
+}
