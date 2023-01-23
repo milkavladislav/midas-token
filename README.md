@@ -1,3 +1,5 @@
+Figma: [link](https://www.figma.com/file/HyY4p5kzWbUVgdvQVc3K70/Midas-token?node-id=1%3A536&t=ZLf6Vw2hVOSkfAaQ-1)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
