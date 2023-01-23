@@ -37,10 +37,22 @@ section {
   background: var(--color-bg-primary);
   border-radius: 5rem;
   padding: var(--section-padding);
+  margin-bottom: 5px;
 }
+
+section > h2 {
+  font-weight: 700;
+  font-size: 9rem;
+  line-height: 8rem;
+  letter-spacing: -0.07em;
+}
+
+
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
 @media screen and (max-width: 1024px) {
-    
+  section > h2 {
+    font-size: 5rem;
+  }
 }
 
 /* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
@@ -48,5 +60,10 @@ section {
   section {
     border-radius: 3rem;
     padding: 2rem;
+  }
+
+  section > h2 {
+    font-size: 3rem;
+    line-height: 3rem;
   }
 }

@@ -1,0 +1,190 @@
+.metrics > h2 {
+  text-align: center;
+}
+
+.metrics {
+  position: relative;
+}
+
+.metrics__content {
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center 15rem;
+  background-size: 40vw;
+  background-image: url("../../assets/radial-background.png");
+}
+
+.metrics__content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 60vh;
+  margin-left: calc(35vw - 5rem);
+  width: 30vw;
+  height: 50vh;
+  background: radial-gradient(
+    149.83% 57218.98% at 92.97% 0%,
+    #43a1f7 0%,
+    #00f79e 100%
+  );
+  filter: blur(200px);
+}
+
+.metrics__cards {
+  display: flex;
+  padding: 5rem;
+  position: relative;
+  z-index: 1;
+  gap: 5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.metrics__card:nth-of-type(1),
+.metrics__card:nth-last-child(1) {
+  width: 100%;
+}
+
+.metrics__card > h3 {
+  font-size: 3rem;
+  line-height: 4rem;
+  text-align: center;
+  letter-spacing: -0.048em;
+}
+
+.metrics__card > p {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  opacity: 0.36;
+}
+
+.metrics__card:nth-last-child(1) > h3 {
+  font-size: 4rem;
+}
+
+.metrics__card:nth-last-child(1) > p {
+  font-size: 1.5rem;
+  opacity: 1;
+  line-height: 2rem;
+}
+
+.metrics__buttons {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.metrics__button {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 40%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 40px 64px -30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  border-radius: 2rem;
+}
+
+.metrics__button:hover {
+  box-shadow: 0px 70px 70px -50px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.metrics__button > img {
+  width: 4rem;
+}
+
+.metrics__button > p {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 0rem;
+  letter-spacing: -0.032em;
+  color: var(--color-white);
+}
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media screen and (max-width: 1024px) {
+  .metrics__cards {
+    padding: 3rem;
+    z-index: 1;
+    gap: 4rem;
+  }
+
+  .metrics__content::before {
+    top: 40vh;
+  }
+
+  .metrics__card > h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .metrics__card > p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .metrics__card:nth-last-child(1) > h3 {
+    font-size: 3rem;
+  }
+
+  .metrics__card:nth-last-child(1) > p {
+    font-size: 1rem;
+  }
+
+  .metrics__button {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .metrics__button > img {
+    width: 3rem;
+  }
+
+  .metrics__button > p {
+    font-size: 1.5rem;
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ======== */
+@media screen and (max-width: 600px) {
+  .metrics__card {
+    width: 100%;
+  }
+
+  .metrics__card:nth-last-child(1) {
+    margin-top: 2rem;
+  }
+
+  .metrics__content::before {
+    top: 50vh;
+    margin-left: -3rem;
+    width: 100vw;
+    height: 40vh;
+  }
+
+  .metrics__content {
+    background-position: center 25rem;
+    background-size: 80vw;
+    background-image: url("../../assets/radial-background.png");
+  }
+
+  .metrics__buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .metrics__button {
+    backdrop-filter: unset;
+    width: auto;
+    padding: 2rem;
+    gap: 2rem;
+  }
+}
