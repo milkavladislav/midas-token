@@ -1,6 +1,7 @@
 import React, { ReactElement, useState } from "react";
 import { FaDiscord, FaHeadphones, FaTelegramPlane } from "react-icons/fa";
 import { MdArrowDropDown } from "react-icons/md";
+import Footer from "../Footer/Footer";
 import "./FAQ.css";
 
 interface IFeedbackChannel {
@@ -64,7 +65,7 @@ const FAQ = () => {
         {feedbackChannels.map(({ icon, text, link }) => (
           <a href={link}>
             {icon}
-            {text}
+            <div className="feedback__channels-text">{text}</div>
           </a>
         ))}
       </div>
@@ -80,13 +81,15 @@ const FAQ = () => {
               className="question-part"
               onClick={() => setActiveAnswer(index)}
             >
-              {question}
-              <MdArrowDropDown
+              <div className="question__part-text">{question}</div>
+              <div
                 className={
                   "question__arrow " +
                   (activeAnswer === index && "question__arrow-invert")
                 }
-              />
+              >
+                <MdArrowDropDown />
+              </div>
             </div>
             <div
               className={
@@ -98,6 +101,7 @@ const FAQ = () => {
           </div>
         ))}
       </div>
+      <Footer />
     </section>
   );
 };
