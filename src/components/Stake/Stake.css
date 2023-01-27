@@ -166,6 +166,7 @@
   }
 
   .stake__information::before {
+    width: 40vh;
     left: 0;
   }
 
